@@ -1,0 +1,26 @@
+# Given an array Arr of size N, print all its elements.
+#User function Template for python3
+class Solution:
+
+	def printArray(self,arr, n):
+	    # code here
+	    for i in range(n):
+	        print(arr[i], end=" ")
+        return
+
+#{
+#  Driver Code Starts
+#Initial Template for Python 3
+
+
+# Driver code
+if __name__ == "__main__":
+    tc=int(input())
+    while tc > 0:
+        n=int(input().strip())
+        arr=list(map(int, input().strip().split()))
+        ob = Solution()
+        ob.printArray(arr, n)
+        print()
+        tc=tc-1
+# } Driver Code Ends
